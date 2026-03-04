@@ -1,0 +1,119 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us | The On-chained – Africa RWA Education</title>
+
+  <meta name="description" content="Contact The On-Chained to discuss partnerships, collaboration, or learn more about Africa’s real-world asset future, blockchain education, and tokenization.">
+
+  <!-- Fonts (KEEP ONLY WHAT YOU USE) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/f11dde7594.js" crossorigin="anonymous"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+<header class="navbar">
+  <div class="brand">
+    <img src="css/images/logo.PNG" alt="The On-Chained Logo" class="brand-logo">
+    <span>The On-chained</span>
+  </div>
+
+  <div class="menu">☰</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="article.html">Articles</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+<section class="container fade">
+  <header class="contact-intro stagger-container">
+    <h1 class="contact-title stagger">
+      Let’s Build the Future of African Ownership Together
+      <span class="title-line"></span>
+    </h1>
+
+    <p class="contact-subtext stagger">
+      Have questions, partnership ideas, or want to collaborate?
+      Reach out — we respond.
+    </p>
+</header>
+<section class="container fade contact-section">
+
+  <div class="contact-intro">
+    <h2 class="contact-title">
+      Get In Touch
+      <span class="title-line"></span>
+    </h2>
+
+    <p class="contact-subtext">
+      Have questions about real-world assets, blockchain, or collaboration?
+      Send us a message and we’ll get back to you.
+    </p>
+  </div>
+
+  <form 
+    id="contactForm"
+    class="contact-form"
+    action="https://formspree.io/f/xgolpzkk"
+    method="POST"
+  >
+
+    <div class="form-group">
+      <input type="text" name="name" placeholder=" " required>
+      <label>Full Name</label>
+    </div>
+
+    <div class="form-group">
+      <input type="email" name="email" placeholder=" " required>
+      <label>Email Address</label>
+    </div>
+
+    <div class="form-group">
+      <textarea name="message" rows="5" placeholder=" " required></textarea>
+      <label>Your Message</label>
+    </div>
+
+    <button type="submit" class="btn primary">
+      Send Message →
+    </button>
+
+  </form>
+
+</section>
+
+<div class="popup" id="thankYouPopup">
+  <div class="popup-content">
+    <p>Thank you! Your message has been sent successfully.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<footer class="footer fade">
+  <hr class="footer-divider">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <img src="css/images/logo.PNG" alt="The On-Chain Logo" class="footer-logo">
+      <span>The On-chained</span>
+    </div>
+
+     <div class="footer-social">
+      <a href="https://x.com/theonchained" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://x.com/theonchained" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/theonchained" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://x.com/theonchained" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy">&copy; 2026 The On-chained. All rights reserved.</p>
+</footer>
+<script src="main/main.js"></script>
+</body>
+</html>
