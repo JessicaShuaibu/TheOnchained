@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - The Onchained</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f8;
+color:#333;
+}
+
+header{
+background:#0a2f44;
+color:white;
+padding:40px 20px;
+text-align:center;
+}
+
+nav{
+background:#0f405c;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.post{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:6px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.post a{
+text-decoration:none;
+color:#0a2f44;
+font-size:20px;
+font-weight:bold;
+}
+
+.post small{
+color:#777;
+}
+
+footer{
+background:#0a2f44;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Blog</h1>
+<p>Insights, Articles & Updates</p>
+</header>
+
+<nav>
+<a href="/">Home</a>
+<a href="/blog">Blog</a>
+</nav>
+
+<section>
+
+{% for post in site.posts %}
+<div class="post">
+<a href="{{ post.url }}">{{ post.title }}</a><br>
+<small>{{ post.date | date: "%B %d, %Y" }}</small>
+<p>{{ post.excerpt }}</p>
+</div>
+{% endfor %}
+
+</section>
+
+<footer>
+<p>© 2026 The Onchained</p>
+</footer>
+
+</body>
+</html>
